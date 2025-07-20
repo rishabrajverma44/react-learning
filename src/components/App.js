@@ -10,7 +10,7 @@ export function renderApp() {
   const container = document.createElement('div');
   container.appendChild(Counter());
   container.appendChild(Form());
-  container.appendChild(Search());
+ // container.appendChild(Search());
   container.appendChild(Table());
 
   root.appendChild(container);
