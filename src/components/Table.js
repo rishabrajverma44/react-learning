@@ -26,6 +26,10 @@ export function Table() {
         .join('')}</tbody>
      </table>`;
 
+  if (state.items.length === 0) {
+    tableDiv.style.display = 'none';
+  }
+
   tableDiv.querySelectorAll('.edit-btn').forEach((btn) => {
     btn.addEventListener('click', (e) => {
       const id = e.target.dataset.id;

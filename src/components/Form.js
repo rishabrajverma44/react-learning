@@ -21,9 +21,10 @@ export function Form() {
     const title = form.title.value.trim();
     if (!title) {
       alert('Enter somthing !');
+      form.title.style.borderColor = 'red';
       return;
     }
-
+    form.title.style.borderColor = '';
     if (isEdit) {
       setState({ title });
     } else {
